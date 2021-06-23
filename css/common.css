@@ -146,7 +146,7 @@ ul.navi{
 }
 ul.navi>li{
   position: relative;
-  padding: 10px 25px;
+  padding: 10px 50px;
   font-size: 21px; 
   font-weight: 400;
   cursor: pointer;
@@ -165,7 +165,7 @@ ul.submenu{
 }
 ul.submenu>li{
   width: 100%; 
-  line-height: 1.7;
+  line-height: 2;
   color: #44654a;
   text-align: center;
   letter-spacing: 1px;
@@ -183,10 +183,10 @@ ul.submenu>li:hover{
 /* 푸터 */
 footer{ 
   position: relative;
-  height: 300px; 
+  height: 260px; 
   width: 100%; 
   margin-top: 200px;
-  background-color: #44654a;
+  background-color: #8e6d6e;
 }
 
 footer .inner{
@@ -194,8 +194,7 @@ footer .inner{
   width: 100%;
   min-width: 1600px;
   max-width: 1920px;
-  height: 300px;
-  
+  height: 100%;
 }
 .bottom{
   margin-left: 10%;
@@ -259,7 +258,7 @@ footer .right{
 }
 footer .customer{ 
   letter-spacing: .5px;
-  height: 150px; 
+  height: 130px; 
   width: 100%; 
 }
 footer .customer b{
@@ -273,10 +272,16 @@ footer .customer strong{
 footer .customer p{
   line-height: 2.5;
 }
-footer .copyright{ 
+footer .sns_link{ 
   height: 40px; 
-  width: 100%;
+  width: 40%;
   letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .sns_link img{
+  width: 30px; 
+  height: 30px; 
 }
 /* 탑버튼 */
 #to-top{

@@ -26,7 +26,7 @@
         "justify-content": "flex-start"
       });
       gsap.to(topBgEl, .1, {
-        height: "180px"
+        height: "230px"
       });
       gsap.to(headerEl, .1, {
         position: "fixed",
