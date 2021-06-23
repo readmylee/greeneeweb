@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLANTERIOR</title>
+
+  <!-- 구글폰트-나눔고딕 -->
+  <link rel="preconnect" shref="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- 구글 머터리얼아이콘 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  
+  <!-- GSAP & SCROLL TOP PLUGIN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js" integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
+  <!-- SCROLL MAGIC -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- LODASH -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/common.js" defer type="text/javascript"></script>
+	<script src="js/main.js" defer type="text/javascript"></script>
+</head>
+<body>
+	<div class="bodyWrap">
+    <header>
+      <!--메뉴슬라이드 배경-->
+      <div id="top_bg"></div>
+      <div class="fixed-inner">
+        <!--최상단 회원서비스 고정메뉴-->
+        <div class="gnb">
+          <ul>
+            <li><a href="" #="">로그인</a></li>
+            <li>|</li>
+            <li><a href="" #="">회원가입</a></li>
+            <li>|</li>
+            <li><a href="" #="">장바구니</a></li>
+          </ul>
+        </div>
+        <!--스크롤시 고정배치변경을 위해 로고+네비메뉴를 감싸는 박스입니다. -->
+        <div class="top">
+          <!--로고-->
+          <h1 class="logo">
+            <a href="/">GREENEE</a>
+          </h1>
+          <!--네비 메뉴 시작-->
+          <nav>
+            <ul class="navi">
+              <li>어바웃
+                <ul class="submenu">
+                  <li><a href="" #="">사업소개</a></li>
+                  <li><a href="" #="">파트너쉽문의</a></li>
+                </ul>
+              </li>
+              <li>플랜트샵
+                <ul class="submenu">
+                  <li><a href="" #="">관엽/공기정화식물</a></li>
+                  <li><a href="" #="">수경/다육식물</a></li>
+                  <li><a href="" #="">행잉플랜트</a></li>
+                  <li><a href="" #="">프리저브드</a></li>
+                  <li><a href="" #="">가드닝용품</a></li>
+                </ul>
+              </li>
+              <li>인테리어
+                <ul class="submenu">
+                  <li><a href="" #="">홈데코</a></li>
+                  <li><a href="" #="">조명/장식</a></li>
+                  <li><a href="" #="">인테리어소품</a></li>
+                  <li><a href="" #="">수납/정리</a></li>
+                </ul>
+              </li>
+              <li>커뮤니티
+                <ul class="submenu">
+                  <li><a href="" #="">BRANDNEWS</a></li>
+                  <li><a href="" #="">MAGAZINE</a></li>
+                  <li><a href="" #="">ACADEMY</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div><!--top끝-->
+      </div>
+		</header>
+    <!--메인 이미지슬라이드 영역-->
+    <section class="slideWrap">
+      <div class="mainSlide">
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="img/slide1.jpg" alt=""/>
+              <span class="slideTxt">그림과 식물이 주는 좋은 기운, 풍수지리 플랜테리어
+                <b class="sTbtn"> 보러가기>> </b>
+              </span>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/slide2.jpg" alt=""/>
+              <span class="slideTxt">잠 못 드는 밤, 당신의 침실에 놓아주고픈 식물들
+                <b class="sTbtn" >보러가기>></b>
+              </span>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/slide3.jpg" alt=""/>
+              <span class="slideTxt">부부의 날, 당신의 반려자에게 어울리는 반려식물 추천
+                <b class="sTbtn"> 보러가기>> </b>
+              </span>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/slide4.jpg" alt=""/>
+              <span class="slideTxt">카페감성 그대로, 집안 곳곳 감성 플러스
+                <b class="sTbtn"> 보러가기>> </b>
+              </span>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/slide5.jpg" alt=""/>
+              <span class="slideTxt">식물들의 햇살 먹방, 포근한 우리집
+                <b class="sTbtn"> 보러가기>> </b></span>
+            </li>
+          </ul>
+        </div>
+        <!--메인 이미지슬라이드 하단 탭버튼-->
+        <a href="#">
+          <div class="swiper-pagination"></div>
+        </a>   
+        <!-- 메인 이미지슬라이드 좌우 화살표 버튼 -->
+        <div class="prevBtn">
+          <div class="material-icons">navigate_before</div>
+        </div>
+        <div class="nextBtn">
+          <div class="material-icons">navigate_next</div>
+        </div>
+      </div>
+    </section>
+    <!--베스트플랜트 스와이퍼 영역-->
+    <section class="items-box">
+      <!--배경-->
+      <div class="items">
+        <!--비포버튼-->
+        <div class="prevBtn">
+          <div class="material-icons">navigate_before</div>
+        </div>
+        <!--박스6개 묶음-->
+        <div class="inner">
+          <!--텍스트박스1-->
+          <div class="itemTxt1">
+            <div>
+              <h4>BEST PLANT</h4>
+              <b>소중한 공간을 따스하게</b>
+              <p>사실 식물 키우기에는 대단한 조건이 필요치 않다는 것을, 식물과 함께 사는 삶은 생각보다 더 아름답다는 것을 알아주기를. <br>
+                어느 날 꽃집에 들른 당신의 손에 소담한 식물 한 그루가 들려 있기를 바라면서..</p>
+            </div>
+          </div>
+          <!--스와이퍼 박스 시작-->
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item1_2.jpg" alt="item1_2"/>
+                    <span style="text-align: right"> 몬스테라 <br> 수경 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item1_2.jpg" alt="itemtxt"/>
+                    <p>큰 잎이 멋스러운 공기정화 식물<br>이국적인 분위기와 확실한 존재감으로 멋스러운 플랜테리어!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item1_3.jpg" alt="item1_3"/>
+                    <span style="text-align: right"> 마다가스카르 <br> 자스민 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item1_3.jpg" alt="itemtxt"/>
+                    <p>빈 공간을 초록초록하게 채우기에 더 없이 좋은 식물<br>봄부터 여름까지 흰 색 꽃을 피움</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item1_1.jpg" alt="item1_1"/>
+                    <span style="text-align: right"> 마오리소포라 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item1_1.jpg" alt="itemtxt"/>
+                    <p>한 그루의 나무같은 수형에 우아한 줄기가 멋스러운 식물<br>감성 인테리어템</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item2_3.jpg" alt="item2_3"/>
+                    <span style="text-align: right"> 남천나무 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item2_3.jpg" alt="itemtxt"/>
+                    <p>사계절을 품은 행운식물<br>아름다운 단풍나무<br>남천나무</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item2_2.png" alt="item2_2"/>
+                    <span> 낑깡나무 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item2_2.png" alt="itemtxt"/>
+                    <p>새콤달콤 오렌지 레몬 향기 가득<br>노랑열매의 싱그러움으로 감각적인 인테리어 연출</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item2_1.jpg" alt="item2_1"/>
+                    <span> 유칼립투스 <br> 폴리안 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item2_1.jpg" alt="itemtxt"/>
+                    <p>가녀린 가지에 동글동글한 잎사귀가 사랑스러운 식물<br> 유칼립투스 폴리안</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item3_1.jpg" alt="item3_1"/>
+                    <span style="text-align: right">유주나무 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item3_1.jpg" alt="itemtxt"/>
+                    <p>사계절 내내 꽃과 열매를 볼 수 있는 관상적 가치가 높은 유주나무</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item3_3.jpg" alt="item3_3"/>
+                    <span style="text-align: right"> 란타나 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item3_3.jpg" alt="itemtxt"/>
+                    <p>일곱가지의 색으로 변하는 꽃<br>화려한 꽃다발<br>매력적인 란타나 키우기</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="itemImg">
+                    <img src="img/item3_2.jpg" alt="item3_2"/>
+                    <span style="text-align: right"> 로드킬 <br> 만세선인장 </span>
+                  </div>
+                  <div class="itemIntro">
+                    <img src="img/item3_2.jpg" alt="itemtxt"/>
+                    <p>거실 인테리어의 끝판왕<br>키우기 쉬운 가시없는 선인장</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--텍스트박스-->
+          <div class="itemTxt2">
+            <p>We love to<br> see you<br> smaile :)</p>
+          </div>
+        </div>
+        <!--넥스트버튼-->
+        <div class="nextBtn"><div class="material-icons">navigate_next</div></div>
+      </div>
+		</section>
+    <!--하단 컨텐츠 묶음입니다.-->
+		<section class="container">
+      <!-- 클래스 영역 -->
+			<div class="contents">
+				<h1>식물이 알려주는 슬로우 라이프</h1>
+				<ul class="openClass">
+					<li><a href="#"><h2>페이퍼 콜라주</h2><img src="img/class1.jpg" alt="class1"><span>2021.04.21~2021.05.18 4주속성 단기클래스</span></a></li>
+					<li><a href="#"><h2 style="margin-top: -30px;">돌보고 키우고<br>그린다는 것</h2><img src="img/class2.jpg" alt="class2"><span>2021.04.16~2021.07.15 정규강좌 OPEN!!</span></a></li>
+					<li><a href="#"><h2>슬기로운 집콕생활</h2><img src="img/class3.jpg" alt="class3"><span>2021.04.28~2021.08.06 정규강좌 OPEN!!</span></a></li>
+				</ul>
+			</div>
+      <!-- SNS박스 영역 -->
+			<div class="contents">
+        <h1>인스타그램 속 반려나무 양육 스토리</h1>
+				<ul class="snsBox">
+					<li class="sns_l">
+						<div><a href="#"><img src="img/sns1.png" alt="sns_l1"><span>ID abcd123님</span></a></div>
+						<ul>
+							<li><a href="#"><img src="img/sns2.jpg" alt="sns_l2"><span>ID lin1004님</span></a></li>
+							<li><a href="#"><img src="img/sns3.jpeg" alt="sns_l3"><span>ID tmibb님</span></a></li>
+						</ul>
+					</li>
+					<li class="sns_m">
+						<div><a href="#"><img src="img/sns4.jpg" alt="sns_m1"><span>ID tanguri1님</span></a></div>
+						<div><a href="#"><h2>BEST REVIEW</h2></a></div>
+						<div><a href="#"><img src="img/sns6.jpeg" alt="sns_m3"><span>ID sua93님</span></a></div>
+					</li>
+					<li class="sns_r">
+						<ul>
+							<li><a href="#"><img src="img/sns7.jpeg" alt="sns_r1"><span>ID hoito_o님</span></a></li>
+							<li><a href="#"><img src="img/sns8.jpeg" alt="sns_r2"><span>ID Gyu2303님</span></a></li>
+						</ul>
+						<div><a href="#"><img src="img/sns9.jpeg" alt="sns_r3"><span>ID parkzzang님</span></a></div>
+					</li>
+				</ul>
+		  </div>
+    </section>
+		<footer>
+      <!--푸터입니다-->
+			<div class="inner">
+				<div class="bottom">
+					<div class="left">
+						<b class="title">그리니모바일</b>
+            <img src="img/QRCodeImg.jpg" alt="qrcode" class="qrcode">
+            <div>
+              <span class="material-icons">APPDOWN download</span>
+            </div>
+          </div>  
+				  <div class="center">
+						<h2>GREENEE PLANTERIOR SHOP</h2>
+						<p> <b>상호명 : GREENEE </b> <br>
+								대표이사 : 이지은<br>
+								주소 : 경기도 수원시 장안구 정조로 540-1<br>
+								사업자등록번호 : 821-87-00000 / 
+								통신판매업 신고번호 : 제 2017-경기수원-1357<br>
+								<a href="#">개인정보보호책임자 : 이지은 &nbsp;<u>개인정보처리방침</u></a>
+						</p>
+				  </div>
+				  <div class="right">
+						<div class="customer">
+								<b>고객센터</b><br>
+								<strong>1234-5678</strong>
+								<p>상담시간 : 오전9시~오후6시 (토요일,공휴일 휴무)</p>
+						</div>
+						<div class="copyright">
+								<p>copyright &copy; <span class="this-year"> </span> GREENEE PLANT All Right Reserved</p>
+						</div>
+			  	</div>
+		  	</div>
+      </div>
+		</footer>
+    <!--탑버튼-->
+    <div id="to-top">
+      <span class="material-icons">
+        keyboard_arrow_up
+      </span>
+      <div class="text">TOP</div>
+    </div>
+	</div>
+
+</body>
+</html>

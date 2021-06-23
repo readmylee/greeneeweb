@@ -1,0 +1,37 @@
+
+section{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.inner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1920px;
+    height: 100%;
+    border: 1px solid blue;
+}
+.left-20{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 200px;
+}
+
+/* VISUAL */
+.visual{
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    background-image: url("../sub_img/submain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
