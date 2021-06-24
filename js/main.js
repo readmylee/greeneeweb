@@ -26,3 +26,26 @@
       nextEl: '.items .nextBtn',
     }
   })
+
+
+   // 탑버튼
+   const toTopEl= document.querySelector('#to-top')
+  
+   window.addEventListener('scroll',_.throttle(function(){
+     if(window.scrollY > 1000){
+       gsap.to(toTopEl, .2, {
+         opacity: 1
+       });
+     } else{
+       gsap.to(toTopEl, .2, {
+         opacity: 0
+       });
+     }
+   },300));
+   
+   toTopEl.addEventListener('click', function(){
+     gsap.to(window, .5, {
+       scrollTo: 0
+     });
+   });
+ 
